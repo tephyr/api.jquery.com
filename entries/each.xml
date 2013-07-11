@@ -72,7 +72,7 @@ $( document.body ).click(function () {
   <example>
     <desc>To access a jQuery object instead of the regular DOM element, use <code>$( this )</code>. For example:</desc>
     <code><![CDATA[
-$( "span" ).click(function () {
+$( "span" ).click(function() {
   $( "li" ).each(function() {
     $( this ).toggleClass( "example" );
   });
@@ -104,8 +104,8 @@ To do list: <span>(click here to change)</span>
   <example>
     <desc>Use "return" to break out of each() loops early.</desc>
     <code><![CDATA[
-$( "button" ).click(function () {
-  $( "div" ).each(function ( index, domEle ) {
+$( "button" ).click(function() {
+  $( "div" ).each(function( index, domEle ) {
     // domEle == this
     $( domEle ).css( "backgroundColor", "yellow" );
     if ( $( this ).is( "#stop" ) ) {
