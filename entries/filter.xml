@@ -71,7 +71,7 @@ $( "li" )
   .filter(function( index ) {
     return index % 3 == 2;
   })
-  .css( "background-color", "red");
+  .css( "background-color", "red" );
     </code></pre>
     <p>This alteration to the code will cause the third and sixth list items to be highlighted, as it uses the modulus operator (<code>%</code>) to select every item with an <code>index</code> value that, when divided by 3, has a remainder of <code>2</code>.</p>
   </longdesc>
