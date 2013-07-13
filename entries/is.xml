@@ -175,7 +175,7 @@ $( "div" ).text( "isFormParent = " + isFormParent );
   <example>
     <desc>Checks against an existing collection of alternating list elements. Blue, alternating list elements slide up while others turn red.</desc>
     <code><![CDATA[
-var $alt = $( "#browsers li:nth-child(2n)" ).css( "background", "#00FFFF" );
+var $alt = $( "#browsers li:nth-child(2n)" ).css( "background", "#0ff" );
 $( "li" ).click(function() {
   var $li = $(this);
   if ( $li.is( $alt ) ) {
