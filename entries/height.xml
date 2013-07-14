@@ -28,13 +28,13 @@ $( document ).height(); // returns height of HTML document
 function showHeight( ele, h ) {
   $( "div" ).text( "The height for the " + ele + " is " + h + "px." );
 }
-$( "#getp" ).click(function () {
+$( "#getp" ).click(function() {
   showHeight( "paragraph", $( "p" ).height() );
 });
-$( "#getd" ).click(function () {
+$( "#getd" ).click(function() {
   showHeight( "document", $( document ).height() );
 });
-$( "#getw" ).click(function () {
+$( "#getw" ).click(function() {
   showHeight( "window", $( window ).height() );
 });
 ]]></code>
@@ -96,7 +96,7 @@ $( "#getw" ).click(function () {
     <example>
       <desc>To set the height of each div on click to 30px plus a color change.</desc>
       <code><![CDATA[
-$( "div" ).one( "click", function () {
+$( "div" ).one( "click", function() {
   $( this ).height( 30 ).css({
     cursor: "auto",
     backgroundColor: "green"

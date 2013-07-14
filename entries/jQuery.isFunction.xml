@@ -17,14 +17,14 @@
 function stub() {
 }
 var objs = [
-  function () {},
+  function() {},
   { x:15, y:20 },
   null,
   stub,
   "function"
 ];
 
-jQuery.each( objs, function ( i ) {
+jQuery.each( objs, function( i ) {
   var isFunc = jQuery.isFunction( objs[ i ]);
   $( "span" ).eq( i ).text( isFunc );
 });

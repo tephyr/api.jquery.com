@@ -62,7 +62,7 @@ $( "#clickme" ).click(function() {
   <example>
     <desc>Animates first paragraph to fade to an opacity of 0.33 (33%, about one third visible), completing the animation within 600 milliseconds.</desc>
     <code><![CDATA[
-$( "p:first" ).click(function () {
+$( "p:first" ).click(function() {
   $( this ).fadeTo( "slow", 0.33 );
 });
 ]]></code>
@@ -79,7 +79,7 @@ Compare to this one that won't fade.
   <example>
     <desc>Fade div to a random opacity on each click, completing the animation within 200 milliseconds.</desc>
     <code><![CDATA[
-$( "div" ).click(function () {
+$( "div" ).click(function() {
   $( this ).fadeTo( "fast", Math.random() );
 });
 ]]></code>
@@ -124,7 +124,7 @@ $( "div" ).click(function () {
 var getPos = function( n ) {
   return ( Math.floor( n ) * 90) + "px";
 };
-$( "p" ).each(function ( n ) {
+$( "p" ).each(function( n ) {
   var r = Math.floor( Math.random() * 3 );
   var tmp = $( this ).text();
   $( this ).text( $( "p:eq(" + r + ")" ).text() );
@@ -136,7 +136,7 @@ $( "div" ).each(function( n ) {
 })
   .css( "cursor", "pointer" )
   .click( function() {
-    $( this ).fadeTo( 250, 0.25, function () {
+    $( this ).fadeTo( 250, 0.25, function() {
       $( this )
         .css( "cursor", "" )
         .prev()

@@ -25,9 +25,9 @@ $( selector ).mouseenter( handlerIn ).mouseleave( handlerOut );
       <desc>To add a special style to list items that are being hovered over, try:</desc>
       <code><![CDATA[
 $( "li" ).hover(
-  function () {
+  function() {
     $( this ).append( $( "<span> ***</span>" ) );
-  }, function () {
+  }, function() {
     $( this ).find( "span:last" ).remove();
   }
 );
@@ -63,9 +63,9 @@ $( "li.fade" ).hover(function() {
       <desc>To add a special style to table cells that are being hovered over, try:</desc>
       <code><![CDATA[
 $( "td" ).hover(
-  function () {
+  function() {
     $( this ).addClass( "hover" );
-  }, function () {
+  }, function() {
     $( this ).removeClass( "hover" );
   }
 );
@@ -105,10 +105,10 @@ $( "li" )
   .end()
   .filter( ":even" )
     .hover(
-      function () {
+      function() {
         $( this ).toggleClass( "active" ).next().stop( true, true ).slideToggle();
       }
-);
+    );
 ]]></code>
       <css><![CDATA[
   ul {

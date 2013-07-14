@@ -140,7 +140,7 @@ var keys = $.map( dimensions, function( value, key ) {
   <example>
     <desc>Map the original array to a new one; each element is squared.</desc>
     <code><![CDATA[
-$.map( [ 0, 1, 2, 3 ], function (a) {
+$.map( [ 0, 1, 2, 3 ], function( a ) {
   return a * a;
 });
 ]]></code>
@@ -151,7 +151,7 @@ $.map( [ 0, 1, 2, 3 ], function (a) {
   <example>
     <desc>Map the original array to a new one, removing numbers less than 50 by returning <code>null</code> and subtracting 45 from the rest.</desc>
     <code><![CDATA[
-$.map( [ 0, 1, 52, 97 ], function ( a ) {
+$.map( [ 0, 1, 52, 97 ], function( a ) {
   return (a > 50 ? a - 45 : null);
 });
 ]]></code>

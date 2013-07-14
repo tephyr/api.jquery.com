@@ -185,14 +185,15 @@ $.ajax();
     <pre><code>
 $.ajax({
   url: "http://fiddle.jshell.net/favicon.png",
-  beforeSend: function ( xhr ) {
+  beforeSend: function( xhr ) {
     xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
   }
-}).done(function ( data ) {
-  if( console &amp;&amp; console.log ) {
-    console.log( "Sample of data:", data.slice( 0, 100 ) );
-  }
-});
+})
+  .done(function( data ) {
+    if( console &amp;&amp; console.log ) {
+      console.log( "Sample of data:", data.slice( 0, 100 ) );
+    }
+  });
 </code></pre>
     <p>The jqXHR objects returned by <code>$.ajax()</code> as of jQuery 1.5 implement the Promise interface, giving them all the properties, methods, and behavior of a Promise (see <a href="/category/deferred-object/">Deferred object</a> for more information). These methods take one or more function arguments that are called when the <code>$.ajax()</code> request terminates. This allows you to assign multiple callbacks on a single request, and even to assign callbacks after the request may have completed. (If the request is already complete, the callback is fired immediately.) Available Promise methods of the jqXHR object include: </p>
     <ul>

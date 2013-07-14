@@ -19,7 +19,7 @@ $( "#messages" ).text( "Found " + allInputs.length + " inputs and the form has "
   formChildren.length + " children." );
 
 // so it won't submit
-$( "form" ).submit(function () {
+$( "form" ).submit(function() {
   return false;
 });
 ]]></code>

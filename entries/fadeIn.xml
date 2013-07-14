@@ -50,7 +50,7 @@ $( "#clickme" ).click(function() {
   <example>
     <desc>Animates hidden divs to fade in one by one, completing each animation within 600 milliseconds.</desc>
     <code><![CDATA[
-$( document.body ).click(function () {
+$( document.body ).click(function() {
   $( "div:hidden:first" ).fadeIn( "slow" );
 });
 ]]></code>
@@ -86,8 +86,8 @@ $( document.body ).click(function () {
   <example>
     <desc>Fades a red block in over the text. Once the animation is done, it quickly fades in more text on top.</desc>
     <code><![CDATA[
-$( "a" ).click(function () {
-  $( "div" ).fadeIn( 3000, function () {
+$( "a" ).click(function() {
+  $( "div" ).fadeIn( 3000, function() {
     $( "span" ).fadeIn( 100 );
   });
   return false;

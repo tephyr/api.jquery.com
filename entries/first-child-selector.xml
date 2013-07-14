@@ -14,11 +14,11 @@
     <code><![CDATA[
 $( "div span:first-child" )
   .css( "text-decoration", "underline" )
-  .hover(function () {
+  .hover(function() {
     $( this ).addClass( "sogreen" );
-  }, function () {
+  }, function() {
     $( this ).removeClass( "sogreen" );
-});
+  });
 ]]></code>
     <css><![CDATA[
   span {

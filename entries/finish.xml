@@ -23,37 +23,37 @@ var horiz = $( "#path" ).width() - 20,
   vert = $( "#path" ).height() - 20;
 
 var btns = {
-  bstt: function () {
+  bstt: function() {
     $( "div.box" ).stop( true, true );
   },
-  bs: function () {
+  bs: function() {
     $( "div.box" ).stop();
   },
-  bsft: function () {
+  bsft: function() {
     $( "div.box" ).stop( false, true );
   },
-  bf: function () {
+  bf: function() {
     $( "div.box" ).finish();
   },
-  bcf: function () {
+  bcf: function() {
     $( "div.box" ).clearQueue().finish();
   },
-  bsff: function () {
+  bsff: function() {
     $( "div.box" ).stop( false, false );
   },
-  bstf: function () {
+  bstf: function() {
     $( "div.box" ).stop( true, false );
   },
-  bcs: function () {
+  bcs: function() {
     $( "div.box" ).clearQueue().stop();
   }
 };
 
-$( "button.b" ).on( "click", function () {
+$( "button.b" ).on( "click", function() {
   btns[ this.id ]();
 });
 
-$( "#go" ).on( "click", function () {
+$( "#go" ).on( "click", function() {
   $( ".box" )
     .clearQueue()
     .stop()

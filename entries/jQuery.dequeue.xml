@@ -18,10 +18,10 @@
   <example>
     <desc>Use jQuery.dequeue() to end a custom queue function which allows the queue to keep going.</desc>
     <code><![CDATA[
-$( "button" ).click(function () {
+$( "button" ).click(function() {
   $( "div" ).animate({ left: '+=200px' }, 2000 );
   $( "div" ).animate({ top: '0px' }, 600 );
-  $( "div" ).queue(function () {
+  $( "div" ).queue(function() {
     $( this ).toggleClass( "red" );
     $.dequeue( this );
   });

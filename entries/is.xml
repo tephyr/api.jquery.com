@@ -78,7 +78,7 @@ $( "li" ).click(function() {
   <example>
     <desc>Shows a few ways is() can be used inside an event handler.</desc>
     <code><![CDATA[
-$( "div" ).one( "click", function () {
+$( "div" ).one( "click", function() {
   if ( $( this ).is( ":first-child" ) ) {
     $( "p" ).text( "It's the first div." );
   } else if ( $( this ).is( ".blue,.red" ) ) {
