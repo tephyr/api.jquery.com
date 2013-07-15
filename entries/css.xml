@@ -228,7 +228,7 @@ $( "p" )
       backgroundColor : "#ddd",
       fontWeight: ""
     };
-    $( this ).css( styles );
+  $( this ).css( styles );
   });
 ]]></code>
       <css><![CDATA[
@@ -244,7 +244,7 @@ $( "p" )
     <example>
       <desc>Increase the size of a div when you click it.</desc>
       <code><![CDATA[
-$( "div" ).on( "  click", function() {
+$( "div" ).on( "click", function() {
   $( this ).css({
     width: function( index, value ) {
       return parseFloat( value ) * 1.2;
