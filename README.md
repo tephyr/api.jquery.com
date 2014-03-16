@@ -52,7 +52,7 @@ To build and deploy your changes for previewing in a [jquery-wp-content](https:/
 
 Code in the API documentation should follow the [jQuery Core Style Guide](http://contribute.jquery.org/style-guide/) with the following addition:
 
-* **Document ready syntax**: Use `$( document ).ready(function() {` instead of `$(function() {` as it's harder for new users to distinguish the difference between the latter and an IIFE.
+* **Document ready syntax**: Use `$( document ).ready(function() {` instead of `$(function() {` as it's harder for new users to distinguish the difference between the latter and an IIFE (`in-line function expression`).
 
 #### Code within prose content (paragraphs and the like):
 
